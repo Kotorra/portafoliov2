@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body {
+    margin: auto;
+    background-color: black;
+    color: blanchedalmond;
+    max-width: 1200px;
+    font-family: Noto Sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    margin: 25px;
+
+}
+
+
+.header-principal {
+    box-sizing: border-box;
+    background: linear-gradient(75deg, rgb(0, 28, 184) 0%, rgb(165, 0, 151) 25%, rgb(0, 50, 211) 50%, rgb(233, 5, 127) 75%);
+    background-size: 200% 200%;
+    animation: moverDegradado 6s ease infinite;
+    border-radius: 25px;
+    padding: 2px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.ajuste-header {
+    background: linear-gradient(to right, #000020 0%, rgb(13, 0, 8) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    position: relative;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.titulo-header1 {
+    padding: 0px;
+    margin: -10px;
+    background: linear-gradient(75deg, rgb(0, 83, 190) 0%, rgb(248, 9, 228) 25%, rgb(0, 106, 226) 50%, rgb(243, 18, 138) 75%);
+    background-size: 200% 200%;
+    animation: moverDegradado 6s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    font-weight: 700;
+    position: relative;
+    z-index: 4;
+    font-family: Bebas Neue,sans-serif;
+    filter: brightness(1.5);
+}
+.sombra-header1 {
+    position:absolute;
+    font-size: 72px;
+    font-weight: 700;
+    color: transparent;
+    text-shadow: 0.5px 0.5px 4px rgb(0, 0, 0);
+    z-index: 3;
+    font-family: Bebas Neue,sans-serif;
+}
+
+
+.titulo-header2 {
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(75deg, rgb(0, 83, 190) 0%, rgb(248, 9, 228) 25%, rgb(0, 106, 226) 50%, rgb(243, 18, 138) 75%);
+    background-size: 200% 200%;
+    animation: moverDegradado 6s ease infinite;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    z-index: 4;
+}
+.sombra-header2 {
+    position:absolute;
+    font-size: 32px;
+    font-weight: 700;
+    color: transparent;
+    text-shadow: 0.5px 0.5px 4px rgb(0, 0, 0);
+    z-index: 3;
+}
+
+.container-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+
+@keyframes moverDegradado {
+    0% {
+        background-position: 0% 50%;
+        /* Inicio del movimiento */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Movimiento hacia la derecha */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* Regreso al inicio */
+    }
+}
+
+.grid-stack {
+    display: grid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    border-radius: 25px;
+    border: 2px solid #00001b;
+    place-content: center;
+}
+
+.grid-stack div{
+    display: flex;
+    flex-shrink: 1;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    fill: white;
+    object-fit: cover;
+    flex-shrink: 1;
+}
+svg{
+    display: flex;
+    flex-shrink: 1;
+}
+.django{
+    filter: brightness(100);
+}
+
+.sql{
+    fill: white !important;
+}
